@@ -44,7 +44,7 @@ function dydt = equations_of_motion(~, y, l1, l2, m1, m2, g) % represents functi
 
 
 
-    %our way 
+    %from calculations
     % -(g*m1*sin(theta1) + g*m2*sin(theta1) + l2*m2*omega2^2*sin(theta1 - theta2) - g*m2*cos(theta1 - theta2)*sin(theta2) + ...
        % l1*m2*omega1^2*cos(theta1 - theta2)*sin(theta1 - theta2))/(l1*(m1 + m2 - m2*cos(theta1 - theta2)^2));
     
@@ -57,7 +57,7 @@ function dydt = equations_of_motion(~, y, l1, l2, m1, m2, g) % represents functi
         g*m1*cos(theta1 - theta2)*sin(theta1) + g*m2*cos(theta1 - theta2)*sin(theta1) + l2*m2*omega2^2*cos(theta1 - theta2)*sin(theta1 - theta2))/(l2*(m1 + m2 - m2*cos(theta1 - theta2)^2));
 
     
-    %our way
+    %from calculation
     % (l1*m1*omega1^2*sin(theta1 - theta2) - g*m2*sin(theta2) - g*m1*sin(theta2) + l1*m2*omega1^2*sin(theta1 - theta2) + ...
        % g*m1*cos(theta1 - theta2)*sin(theta1) + g*m2*cos(theta1 - theta2)*sin(theta1) + l2*m2*omega2^2*cos(theta1 - theta2)*sin(theta1 - theta2))/(l2*(m1 + m2 - m2*cos(theta1 - theta2)^2));
 
