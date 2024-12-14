@@ -1,0 +1,1 @@
+Just a fun project learning about chaos theory and how it applies to the double pendulum. The goal was to use MATLAB to model chaos based on Lagrange equations of motion and different input parameters. 
